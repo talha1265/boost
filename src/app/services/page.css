@@ -1,0 +1,165 @@
+.services{
+    max-width: 82vw;
+    margin-inline:  auto;
+}
+
+.service-content{
+
+    position: relative; /* Ensure the overlay covers the background image */
+    background-image: url('../../assets/images/s-bg.jpg');
+    background-position: center;
+    height: 55vh;   
+    z-index: 1;
+    color: #fff;
+    
+    
+    }
+    
+    .service-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); /* Blackish color with 50% opacity */
+        z-index: -2 /* Ensure the overlay is behind the background image */
+      }
+    
+    
+
+
+
+
+.s-img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.left-box{
+    width: 50%;
+}
+.left-box ul{
+    list-style: none;
+}
+.left-box h2{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.left-box li{
+    font-size: 1.3rem;
+}
+
+
+.right-box{
+    width: 50%;
+   
+    color: #3a3a3a;
+   padding-block: 10px;
+}
+
+.right-box h2{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+.right-box p{
+    font-size: 1.3rem;
+}
+
+.service-hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.margin-block{
+    margin-block: 40px;
+}
+
+@media screen and (max-width: 750px){
+    .left-box{
+        width: 100%;
+    }
+    
+    .right-box{
+        width: 100%;
+       
+        color: #3a3a3a;
+       padding-block: 10px;
+    }
+
+
+    .left-box h2{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    
+    .left-box li{
+        font-size: 1.2rem;
+    }
+    .right-box h2{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .right-box p{
+        font-size: 1.2rem;
+    }
+
+  
+        
+    
+
+}
+
+@media screen and (max-width: 500px){
+
+    .box-2{
+        order: 2;
+    }
+    .box-3{
+        order: 1;
+    }
+    .left-box h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .left-box li{
+        font-size: 1rem;
+    }
+    .right-box h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .right-box p{
+        font-size: 1rem;
+    }
+
+
+    .service-content{
+
+        position: relative; /* Ensure the overlay covers the background image */
+        background-image: url('../../assets/images/s-bg.jpg');
+        background-position: center;
+        height: 50vh;   
+        z-index: -1;
+        color: #fff;
+        
+        
+        }
+
+     
+            
+}
+

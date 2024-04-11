@@ -1,0 +1,152 @@
+.blog {
+    padding: 50px 0;
+    width: 82vw;
+    margin-inline: auto;
+  }
+  
+  .blog h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3a3a3a;
+  }
+  
+  .blog p {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+  }
+
+  .blog-cards {
+  width: 100%; /* Ensure the container takes full width */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of cards */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #c8c8c8 #eae9e9; /* For Firefox */
+
+   /* For Webkit-based browsers (e.g., Chrome, Safari) */
+   &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 5px;
+    border: 3px solid #f0f0f0; /* Match scrollbar track color */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+  }
+}
+
+.card {
+  width: 400px; /* Set card width */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Ensure cards are displayed inline */
+  vertical-align: top; /* Align cards to the top */
+  margin-right: 20px; /* Add some space between cards */
+}
+
+.card:last-child {
+  margin-right: 0; /* Remove margin from the last card */
+}
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+    color: #3a3a3a;
+  }
+  
+  .card-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+
+  .bottom-date{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .read-more-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0d68a6;
+  }
+  
+
+
+  @media screen and (max-width: 850px){
+
+    .card {
+      width: 420px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+    }
+    
+  }
+   
+  @media screen and (max-width: 500px){
+    .blog {
+      padding: 50px 0;
+      width: 90vw;
+      margin-inline: auto;
+    }
+
+    .card {
+      width: 320px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+    }
+    
+  }
+
+  @media screen and (max-width: 350px){
+
+    .card {
+      width: 280px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+    }
+    
+  }
+
+  
