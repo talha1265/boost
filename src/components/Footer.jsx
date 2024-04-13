@@ -23,10 +23,10 @@ const Footer = () => {
         <div className="footer-links">
             <ul className="ul-links">
               <h2>Quick Links</h2>
-              <li><Link href="#" className='ul-link'>Home</Link></li>
-              <li><Link href="#" className='ul-link'>Services</Link></li>
-              <li> <Link href="#" className='ul-link'>About Us</Link></li>
-              <li> <Link href="#" className='ul-link' >Contact Us</Link></li>
+              <li><Link href="/" className='ul-link'>Home</Link></li>
+              <li><Link href="/services" className='ul-link'>Services</Link></li>
+              <li> <Link href="/aboutus" className='ul-link'>About Us</Link></li>
+              <li> <Link href="/contact" className='ul-link' >Contact Us</Link></li>
             </ul>
             <div className="social-handles">
             <h2>Social Handles</h2>
