@@ -1,0 +1,74 @@
+.detail-container {
+    padding: 20px;
+    margin-top: 110px;
+    max-width: 85vw; /* Set max width to 85vw */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+  }
+  
+  .top-heading {
+    font-size: 2.4rem; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Increased margin */
+  }
+  
+  .hero-detail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  
+  .hero-img {
+ 
+    width: 100%;
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+  }
+  
+  .hero-text p {
+   font-size: 1.3rem;
+  }
+  .hero-text h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+   }
+  
+  .detail-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Added border radius for image */
+  }
+  
+  .detail-para {
+    margin-top: 30px; /* Increased margin */
+  }
+  
+  .detail-para p {
+    margin-bottom: 15px; /* Increased margin */
+    font-size: 1.3rem; /* Increased font size */
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .detail-container {
+      margin-top: 80px; /* Adjusted margin for smaller screens */
+    }
+  
+    .top-heading {
+      font-size: 28px; /* Adjusted font size */
+      margin-bottom: 15px; /* Adjusted margin */
+    }
+  
+    .hero-img {
+      flex: 100%; /* Set image to full width on smaller screens */
+      margin-right: 0; /* Remove right margin on smaller screens */
+    }
+  
+    .detail-para {
+      margin-top: 25px; /* Adjusted margin */
+    }
+  
+    .detail-para p {
+      font-size: 16px; /* Adjusted font size */
+    }
+  }
+  

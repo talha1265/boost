@@ -22,7 +22,7 @@ const Cards = ({data}) => {
         <h4>{data.heading}</h4>
         <p>{data.para}</p>
         <div  className="bottom-date">
-        <Link href={`/detail/${data.id}`} className='read-more-btn'>Read More</Link>
+        <Link href={`/blog-detail/${data.id}`} className='read-more-btn'>Read More</Link>
         <p>{data.date}</p>
         </div>
        
